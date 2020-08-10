@@ -17,6 +17,7 @@ config = {
     'url': 'https://github.com/simoncozens/stringbrewer',
     'description': 'Generate random strings matching a pattern',
     'long_description': open('README.md', 'r').read(),
+    'long_description_content_type': 'text/markdown',
     'license': 'MIT',
     'version': '0.0.1',
     'install_requires': install_requires,

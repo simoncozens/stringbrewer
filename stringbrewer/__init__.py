@@ -1,3 +1,4 @@
+# coding: utf8
 from rstr import xeger
 import string
 import re
@@ -80,7 +81,6 @@ one and three times.
         regex = recipe
         for k, v in self.ingredients.items():
             v2 = v.replace("\\", "\\\\")
-            assert v != v2
             regex = re.sub(f"\\b{k}\\b", "(?:" + v2 + ")", regex)
         regex = re.sub("\\s", "", regex)
         return regex
